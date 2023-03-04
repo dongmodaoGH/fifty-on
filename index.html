@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>五十音图小游戏</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>五十音图小游戏</h1>
+		<div id="game">
+		<div class="sound-type-dropdown">
+		    <label for="sound-type">类型：</label>
+		    <select id="sound-type">
+		        <option value="type-1">平假名</option>
+		        <option value="type-2">片假名</option>
+		        <option value="type-3">平假名（全）</option>
+		        <option value="type-4">片假名（全）</option>
+		        <option value="type-5">罗马-平假（全）</option>
+		        <option value="type-6">罗马-片假（全）</option>
+		    </select>
+		    <div class="inline_text" style="margin-left: 2px;">rate:</div>
+		    <div class="inline_text" id="suc_rate">0</div>
+		    <div class="inline_text" style="margin-left: 32px;">left:</div>
+		    <div class="inline_text" id="left_count" >0</div>
+		</div>
+			<div id="prompt"></div>
+			<input type="text" id="answer" placeholder="输入罗马音">
+			<div id="tips">输入错误!!!</div>
+			<button id="submit">提交</button>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
